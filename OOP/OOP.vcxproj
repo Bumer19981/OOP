@@ -150,6 +150,8 @@
     <ClCompile Include="container_Constr.cpp" />
     <ClCompile Include="container_In.cpp" />
     <ClCompile Include="container_Out.cpp" />
+    <ClCompile Include="functional_in.cpp" />
+    <ClCompile Include="functional_out.cpp" />
     <ClCompile Include="langtype_In.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="objectoriented_In.cpp" />
@@ -159,6 +161,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="container_atd.h" />
+    <ClInclude Include="functional_atd.h" />
     <ClInclude Include="langtype_atd.h" />
     <ClInclude Include="list_atd.h" />
     <ClInclude Include="node_atd.h" />
