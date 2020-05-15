@@ -13,5 +13,7 @@ namespace simple_langtypes {
             inheritance = "interface";
         }
         ofst << "It is an object-oriented language: inheritance = " << inheritance << ", year = " << year << endl;
+        langtype::Out(ofst);
+        ofst << endl;
     }
 }

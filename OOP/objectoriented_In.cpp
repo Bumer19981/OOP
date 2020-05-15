@@ -15,5 +15,6 @@ namespace simple_langtypes {
 		{
 			this->inheritance = interface;
 		}
+		langtype::InData(ifst);
 	}
 }

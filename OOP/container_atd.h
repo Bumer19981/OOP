@@ -10,6 +10,8 @@ namespace simple_langtypes {
 		void In(ifstream& ifst);
 		void Out(ofstream& ofst);
 		void Clear(List& list);
+		void Sort();
+		void OutProcedure(ofstream& ofst);
 		container();
 		~container() { Clear(list); }
 	};

@@ -5,10 +5,17 @@
 using namespace std;
 namespace simple_langtypes {
 	class langtype {
+		int mentions;
 	public:
 		static langtype* In(ifstream& ifst);
-		virtual void InData(ifstream& ifst) = 0;
-		virtual void Out(ofstream& ofst) = 0;
+		virtual void InData(ifstream& ifst);
+		virtual void Out(ofstream& ofst);
+		virtual int AmountOfYears() = 0;
+		bool Compare(langtype& other);
+		virtual void OutProcedure(ofstream& ofst);
+	protected:
+		langtype() {};
+
 	};
 }
 #endif

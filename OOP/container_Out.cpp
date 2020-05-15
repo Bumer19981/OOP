@@ -10,6 +10,8 @@ namespace simple_langtypes {
         while (temp != 0) {
             langtype* l = tempHead->l;
             l->Out(ofst);
+            ofst << "amount of years = "
+                << l->AmountOfYears() << endl;
             tempHead = tempHead->Next;
             temp--;
         }
