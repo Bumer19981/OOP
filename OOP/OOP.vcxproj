@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="amount_of_years_functional.cpp" />
     <ClCompile Include="amount_of_years_objectoriented.cpp" />
     <ClCompile Include="amount_of_years_procedure.cpp" />
     <ClCompile Include="container_Constr.cpp" />

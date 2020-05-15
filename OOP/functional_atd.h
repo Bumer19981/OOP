@@ -9,6 +9,7 @@ namespace simple_langtypes {
 	public:
 		void InData(ifstream& ifst);
 		void Out(ofstream& ofst);
+		int AmountOfYears();
 		functional() {}
 	};
 }
