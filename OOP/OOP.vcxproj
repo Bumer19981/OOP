@@ -158,6 +158,8 @@
     <ClCompile Include="functional_out.cpp" />
     <ClCompile Include="container_Sort.cpp" />
     <ClCompile Include="langtype_In.cpp" />
+    <ClCompile Include="langtype_InData.cpp" />
+    <ClCompile Include="langtype_Out.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="objectoriented_In.cpp" />
     <ClCompile Include="objectoriented_Out.cpp" />
