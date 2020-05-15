@@ -12,8 +12,10 @@ namespace simple_langtypes {
 		virtual void Out(ofstream& ofst);
 		virtual int AmountOfYears() = 0;
 		bool Compare(langtype& other);
+		virtual void OutProcedure(ofstream& ofst);
 	protected:
 		langtype() {};
+
 	};
 }
 #endif

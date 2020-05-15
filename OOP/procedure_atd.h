@@ -9,6 +9,7 @@ namespace simple_langtypes {
 		void InData(ifstream& ifst);
 		void Out(ofstream& ofst);
 		int AmountOfYears();
+		void OutProcedure(ofstream& ofst);
 		procedure() {}
 	};
 }

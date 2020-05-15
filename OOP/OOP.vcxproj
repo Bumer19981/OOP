@@ -160,11 +160,15 @@
     <ClCompile Include="langtype_In.cpp" />
     <ClCompile Include="langtype_InData.cpp" />
     <ClCompile Include="langtype_Out.cpp" />
+    <ClCompile Include="container_Outprocedure.cpp" />
+    <ClCompile Include="langtype_Outprocedure.cpp" />
+    <ClCompile Include="container_Outprocedure.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="objectoriented_In.cpp" />
     <ClCompile Include="objectoriented_Out.cpp" />
     <ClCompile Include="procedure_In.cpp" />
     <ClCompile Include="procedure_Out.cpp" />
+    <ClCompile Include="procedure_Outprocedure.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="container_atd.h" />
