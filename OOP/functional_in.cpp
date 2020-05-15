@@ -5,5 +5,6 @@ namespace simple_langtypes {
         string typification;
         ifst >> typification >> isLazyCalculations >> year;
         typification == "dinamic" ? this->typification = dynamic : this->typification = strict;
+        langtype::InData(ifst);
     }
 }
