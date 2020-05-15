@@ -10,6 +10,7 @@ namespace simple_langtypes {
 		virtual void InData(ifstream& ifst) = 0;
 		virtual void Out(ofstream& ofst) = 0;
 		virtual int AmountOfYears() = 0;
+		bool Compare(langtype& other);
 	};
 }
 #endif
