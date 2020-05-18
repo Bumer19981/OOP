@@ -24,4 +24,11 @@ namespace simple_langtypes {
         l->InData(ifst);
         return l;
     }
+    int langtype::GetYear()
+    {
+        return this->year;
+    }
+    int langtype::GetMentions() {
+        return mentions;
+    }
 }

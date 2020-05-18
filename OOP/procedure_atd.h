@@ -4,12 +4,15 @@
 namespace simple_langtypes {
 	class procedure : public langtype {
 		bool isAbstract;
-		short int year;
 	public:
 		void InData(ifstream& ifst);
 		void Out(ofstream& ofst);
-		int AmountOfYears();
 		void OutProcedure(ofstream& ofst);
+
+		bool GetIsAbstract();
+	/*	int GetYear();*/
+		void SetIsAbstract(bool isAbstractVar);
+		//void SetYear(short int yearVar);
 		procedure() {}
 	};
 }

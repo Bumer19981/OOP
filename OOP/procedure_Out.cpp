@@ -7,4 +7,12 @@ namespace simple_langtypes {
         langtype::Out(ofst);
         ofst << endl;
     }
+    void procedure::SetIsAbstract(bool isAbstractVar)
+    {
+        isAbstract = isAbstractVar;
+    }
+ /*   void procedure::SetYear(short int yearVar)
+    {
+        year = yearVar;
+    }*/
 }

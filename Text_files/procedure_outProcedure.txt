@@ -1,0 +1,3 @@
+It is a procedure language: is abstract = 0, year = 1997
+mentions = 1
+amount of years = 23

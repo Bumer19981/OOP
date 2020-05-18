@@ -3,10 +3,10 @@ using namespace std;
 namespace simple_langtypes {
     void objectoriented::Out(ofstream& ofst) {
         string inheritance;
-        if (this->inheritance == once) {
+        if (this->inheritanceVar == once) {
             inheritance = "once";
         }
-        else if (this->inheritance == multiple) {
+        else if (this->inheritanceVar == multiple) {
             inheritance = "multiple";
         }
         else {
@@ -16,4 +16,22 @@ namespace simple_langtypes {
         langtype::Out(ofst);
         ofst << endl;
     }
+    void objectoriented::SetInheritance(string inheritanceVarVar)
+    {
+        if (inheritanceVarVar == "once") {
+            inheritanceVar = once;
+        }
+        else if (inheritanceVarVar == "multiple")
+        {
+            inheritanceVar = multiple;
+        }
+        else
+        {
+            inheritanceVar = interface;
+        }
+    }
+  /*  void objectoriented::SetYear(short int yearVar)
+    {
+        year = yearVar;
+    }*/
 }

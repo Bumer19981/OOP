@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="amount_of_years_functional.cpp" />
-    <ClCompile Include="amount_of_years_objectoriented.cpp" />
-    <ClCompile Include="amount_of_years_procedure.cpp" />
     <ClCompile Include="compare.cpp" />
     <ClCompile Include="container_Constr.cpp" />
     <ClCompile Include="container_In.cpp" />
@@ -22,6 +19,7 @@
     <ClCompile Include="langtype_Outprocedure.cpp" />
     <ClCompile Include="procedure_Outprocedure.cpp" />
     <ClCompile Include="container_Outprocedure.cpp" />
+    <ClCompile Include="langtype_Amount_Of_Years.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="container_atd.h" />

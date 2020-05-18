@@ -5,4 +5,12 @@ namespace simple_langtypes {
         ifst >> isAbstract >> year;
         langtype::InData(ifst);
     }
+    bool procedure::GetIsAbstract()
+    {
+        return isAbstract;
+    }
+    //int procedure::GetYear()
+    //{
+    //    return year;
+    //}
 }

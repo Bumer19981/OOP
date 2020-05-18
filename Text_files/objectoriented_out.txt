@@ -1,0 +1,2 @@
+It is an object-oriented language: inheritance = once, year = 1988
+mentions = 2

@@ -5,16 +5,20 @@ namespace simple_langtypes {
 		string inheritance;
 		ifst >> inheritance >> year;
 		if (inheritance == "once") {
-			this->inheritance = once;
+			this->inheritanceVar = once;
 		}
 		else if (inheritance == "multiple")
 		{
-			this->inheritance = multiple;
+			this->inheritanceVar = multiple;
 		}
 		else
 		{
-			this->inheritance = interface;
+			this->inheritanceVar = interface;
 		}
 		langtype::InData(ifst);
+	}
+	objectoriented::inheritance objectoriented::GetInheritance()
+	{
+		return inheritanceVar;
 	}
 }

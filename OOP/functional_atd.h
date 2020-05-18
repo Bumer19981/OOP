@@ -3,13 +3,17 @@
 #include "langtype_atd.h"
 namespace simple_langtypes {
 	class functional : public langtype {
-		short int year;
-		enum typification { strict, dynamic } typification;
+		enum typification { strict, dynamic } typificationVar;
 		bool isLazyCalculations;
 	public:
 		void InData(ifstream& ifst);
 		void Out(ofstream& ofst);
-		int AmountOfYears();
+
+		bool GetIsLazyCalculations();
+		typification GetTypification();
+		void SetTypification(string typification);
+		void SetIsLazyCalculations(bool isLazyCalculationsVar);
+		//void SetYear(short int yearVar);
 		functional() {}
 	};
 }

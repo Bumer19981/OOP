@@ -3,12 +3,14 @@
 #include "langtype_atd.h"
 namespace simple_langtypes {
 	class objectoriented : public langtype {
-		short int year;
-		enum inheritance { once, multiple, interface } inheritance;
+		enum inheritance { once, multiple, interface } inheritanceVar;
 	public:
 		void InData(ifstream& ifst);
 		void Out(ofstream& ofst);
-		int AmountOfYears();
+
+		inheritance GetInheritance();
+		//void SetYear(short int yearVar);
+		void SetInheritance(string inheritanceVarVar);
 		objectoriented() {}
 	};
 }
