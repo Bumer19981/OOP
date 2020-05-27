@@ -5,6 +5,10 @@
 using namespace std;
 namespace simple_langtypes {
 	void container::Sort() {
+		if (list.Head == NULL)
+		{
+			throw std::invalid_argument("Error: list is empty!");
+		}
 		for (int i = 0; i < list.size - 1; i++) {
 			for (int j = i + 1; j < list.size; j++) {
 				Node* ComparableItem1 = new Node;

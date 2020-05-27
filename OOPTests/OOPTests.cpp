@@ -143,8 +143,6 @@ namespace OOPTests
 			infile.close();
 			ifstream infile1(inputPath);
 			procedure* proc = new procedure;
-			proc->InData(infile1);
-			infile.close();
 			procedure* o = (procedure*)l;
 			Assert::IsTrue(l->GetYear() == 2012);
 			Assert::IsTrue(l->GetMentions() == 1);

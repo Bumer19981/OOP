@@ -2,6 +2,10 @@
 using namespace std;
 namespace simple_langtypes {
     void container::In(ifstream& ifst) {
+        if (!ifst.is_open())
+        {
+            throw std::invalid_argument("Error reading file!");
+        }
         while (!ifst.eof()) {
             langtype* l;
             if ((l = langtype::In(ifst)) != 0) {
