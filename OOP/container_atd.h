@@ -10,6 +10,7 @@ namespace simple_langtypes {
 		void In(ifstream& ifst);
 		void Out(ofstream& ofst);
 		void Clear(List& list);
+		void MultiMethod(ofstream& ofst);
 		container();
 		~container() { Clear(list); }
 	};

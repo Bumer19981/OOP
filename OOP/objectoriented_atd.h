@@ -8,6 +8,9 @@ namespace simple_langtypes {
 	public:
 		void InData(ifstream& ifst);
 		void Out(ofstream& ofst);
+		void MultiMethod(langtype* other, ofstream& ofst);
+		void MMProcedure(ofstream& ofst);
+		void MMObject(ofstream& ofst);
 		objectoriented() {}
 	};
 }

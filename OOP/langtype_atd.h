@@ -9,6 +9,10 @@ namespace simple_langtypes {
 		static langtype* In(ifstream& ifst);
 		virtual void InData(ifstream& ifst) = 0;
 		virtual void Out(ofstream& ofst) = 0;
+		virtual void MultiMethod(langtype* other,
+			ofstream& ofst) = 0;
+		virtual void MMObject(ofstream& ofst) = 0;
+		virtual void MMProcedure(ofstream& ofst) = 0;
 	};
 }
 #endif
