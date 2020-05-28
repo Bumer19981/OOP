@@ -2,14 +2,14 @@
 #include "langtype_atd.h"
 using namespace std;
 namespace simple_langtypes {
-    void langtype::Out(ofstream& ofst) {
+    void Langtype::Out(ofstream& ofst) {
         ofst << "mentions = " << mentions;
     }
-    void langtype::SetMentions(int mentionsVar)
+    void Langtype::SetMentions(int mentionsVar)
     {
         mentions = mentionsVar;
     }
-    void langtype::SetYear(int yearVar)
+    void Langtype::SetYear(int yearVar)
     {
         year = yearVar;
     }

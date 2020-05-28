@@ -4,8 +4,8 @@
 
 using namespace std;
 namespace simple_langtypes {
-	void container::Sort() {
-		if (list.Head == NULL)
+	void Container::Sort() {
+		if (list.head == NULL)
 		{
 			throw std::invalid_argument("Error: list is empty!");
 		}
@@ -15,46 +15,46 @@ namespace simple_langtypes {
 				Node* ComparableItem2 = new Node;
 				for (int k = 0; k <= i; ++k) {
 					if (k == 0) {
-						ComparableItem1 = list.Head;
+						ComparableItem1 = list.head;
 					}
 					else {
-						ComparableItem1 = ComparableItem1->Next;
+						ComparableItem1 = ComparableItem1->next;
 					}
 				}
 				for (int k = 0; k <= j; ++k) {
 					if (k == 0) {
-						ComparableItem2 = list.Head;
+						ComparableItem2 = list.head;
 					}
 					else {
-						ComparableItem2 = ComparableItem2->Next;
+						ComparableItem2 = ComparableItem2->next;
 					}
 				}
 				if (ComparableItem1->l->Compare(*ComparableItem2->l)) {
 					Node* tmp;
-					tmp = ComparableItem2->Next;
-					ComparableItem2->Next = ComparableItem1->Next;
-					ComparableItem2->Next->Prev = ComparableItem2;
+					tmp = ComparableItem2->next;
+					ComparableItem2->next = ComparableItem1->next;
+					ComparableItem2->next->prev = ComparableItem2;
 
-					ComparableItem1->Next = tmp;
-					ComparableItem1->Next->Prev = ComparableItem1;
+					ComparableItem1->next = tmp;
+					ComparableItem1->next->prev = ComparableItem1;
 
-					tmp = ComparableItem1->Prev;
-					ComparableItem1->Prev = ComparableItem2->Prev;
-					ComparableItem1->Prev->Next = ComparableItem1;
+					tmp = ComparableItem1->prev;
+					ComparableItem1->prev = ComparableItem2->prev;
+					ComparableItem1->prev->next = ComparableItem1;
 
-					ComparableItem2->Prev = tmp;
-					ComparableItem2->Prev->Next = ComparableItem2;
-					if (list.Head->l->Compare(*ComparableItem2->l))
-						list.Head = ComparableItem2;
+					ComparableItem2->prev = tmp;
+					ComparableItem2->prev->next = ComparableItem2;
+					if (list.head->l->Compare(*ComparableItem2->l))
+						list.head = ComparableItem2;
 				}
 			}
 		}
 		for (int i = 0; i < list.size; ++i) {
 			if (i == 0) {
-				list.Tail = list.Head;
+				list.tail = list.head;
 			}
 			else {
-				list.Tail = list.Tail->Next;
+				list.tail = list.tail->next;
 			}
 		}
 	}

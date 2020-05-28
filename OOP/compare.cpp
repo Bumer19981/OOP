@@ -1,6 +1,6 @@
 #include "langtype_atd.h"
 using namespace std;
 namespace simple_langtypes {
-	bool langtype::Compare(langtype& other) {
+    bool Langtype::Compare(Langtype& other) {
         return AmountOfYears() < other.AmountOfYears();
     }}

@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
 		file.exceptions(std::ifstream::failbit | std::ifstream::badbit);
 		ofstream outfile(outputPath);
 		cout << "Start" << endl;
-		simple_langtypes::container c;
+		simple_langtypes::Container c;
 		c.In(file);
 		outfile << "Filled container. " << endl;
 		c.Out(outfile);

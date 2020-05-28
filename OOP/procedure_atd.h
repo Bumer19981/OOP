@@ -2,18 +2,15 @@
 #define __procedure_atd__
 #include "langtype_atd.h"
 namespace simple_langtypes {
-	class procedure : public langtype {
+	class Procedure : public Langtype {
 		bool isAbstract;
 	public:
 		void InData(ifstream& ifst);
 		void Out(ofstream& ofst);
 		void OutProcedure(ofstream& ofst);
-
 		bool GetIsAbstract();
-	/*	int GetYear();*/
 		void SetIsAbstract(bool isAbstractVar);
-		//void SetYear(short int yearVar);
-		procedure() {}
+		Procedure() {}
 	};
 }
 #endif

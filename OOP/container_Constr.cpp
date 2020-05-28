@@ -1,17 +1,17 @@
 #include "container_atd.h"
 namespace simple_langtypes {
-    container::container() { }
-    List::List() : Head(NULL), Tail(NULL), size(0) {}
+    Container::Container() { }
+    List::List() : head(NULL), tail(NULL), size(0) {}
     List::~List() {
         while (size != 0)
         {
-            Node* temp = Head->Next;
-            delete Head;
-            Head = temp;
+            Node* temp = head->next;
+            delete head;
+            head = temp;
             size--;
         }
     }
-    void container::Clear(List& list) {
+    void Container::Clear(List& list) {
         list.~List();
     }
 }

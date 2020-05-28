@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 namespace simple_langtypes {
-    void langtype::InData(ifstream& ifst) {
+    void Langtype::InData(ifstream& ifst) {
         string line;
         getline(ifst, line);
         int words = 0;

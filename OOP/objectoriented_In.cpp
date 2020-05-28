@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 namespace simple_langtypes {
-	void objectoriented::InData(ifstream& ifst) {
+    void Objectoriented::InData(ifstream& ifst) {
         string line;
         getline(ifst, line);
         int words = 0;
@@ -42,21 +42,21 @@ namespace simple_langtypes {
             throw std::invalid_argument("Error: year in objectoriented language should be a positive number!");
         }
         string inheritance = array[0];
-		if (inheritance == "once") {
-			this->inheritanceVar = once;
-		}
-		else if (inheritance == "multiple")
-		{
-			this->inheritanceVar = multiple;
-		}
-		else
-		{
-			this->inheritanceVar = interface;
-		}
-		langtype::InData(ifst);
-	}
-	objectoriented::inheritance objectoriented::GetInheritance()
-	{
-		return inheritanceVar;
-	}
+        if (inheritance == "once") {
+            this->inheritanceVar = ONCE;
+        }
+        else if (inheritance == "multiple")
+        {
+            this->inheritanceVar = MULTIPLE;
+        }
+        else
+        {
+            this->inheritanceVar = INTERFACE;
+        }
+        Langtype::InData(ifst);
+    }
+    Objectoriented::Inheritance Objectoriented::GetInheritance()
+    {
+        return inheritanceVar;
+    }
 }

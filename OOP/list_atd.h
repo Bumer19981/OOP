@@ -5,8 +5,8 @@ namespace simple_langtypes {
 	class List
 	{
 	public:
-		Node* Head;
-		Node* Tail;
+		Node* head;
+		Node* tail;
 		int size;
 		List();
 		~List();

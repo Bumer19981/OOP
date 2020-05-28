@@ -5,8 +5,8 @@
 #include <string>
 using namespace std;
 namespace simple_langtypes {
-    langtype* langtype::In(ifstream& ifst) {
-        langtype* l;
+    Langtype* Langtype::In(ifstream& ifst) {
+        Langtype* l;
         int k;
         string line;
         getline(ifst, line);
@@ -41,13 +41,13 @@ namespace simple_langtypes {
         k = stoi(array[0]);;
         switch (k) {
         case 1:
-            l = new procedure;
+            l = new Procedure;
             break;
         case 2:
-            l = new objectoriented;
+            l = new Objectoriented;
             break;
         case 3:
-            l = new functional;
+            l = new Functional;
             break;
         default:
             return 0;
@@ -55,11 +55,11 @@ namespace simple_langtypes {
         l->InData(ifst);
         return l;
     }
-    int langtype::GetYear()
+    int Langtype::GetYear()
     {
         return this->year;
     }
-    int langtype::GetMentions() {
+    int Langtype::GetMentions() {
         return mentions;
     }
 }

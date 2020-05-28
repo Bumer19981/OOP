@@ -2,19 +2,22 @@
 #define __functional_atd__
 #include "langtype_atd.h"
 namespace simple_langtypes {
-	class functional : public langtype {
-		enum typification { strict, dynamic } typificationVar;
+	class Functional : public Langtype {
+		enum Typification {
+			STRICT,
+			DYNAMIC
+		};
+		Typification typificationVar;
 		bool isLazyCalculations;
 	public:
 		void InData(ifstream& ifst);
 		void Out(ofstream& ofst);
 
 		bool GetIsLazyCalculations();
-		typification GetTypification();
+		Typification GetTypification();
 		void SetTypification(string typification);
 		void SetIsLazyCalculations(bool isLazyCalculationsVar);
-		//void SetYear(short int yearVar);
-		functional() {}
+		Functional() {}
 	};
 }
 #endif

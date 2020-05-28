@@ -2,16 +2,19 @@
 #define __objectoriented_atd__
 #include "langtype_atd.h"
 namespace simple_langtypes {
-	class objectoriented : public langtype {
-		enum inheritance { once, multiple, interface } inheritanceVar;
+	class Objectoriented : public Langtype {
+		enum Inheritance {
+			ONCE,
+			MULTIPLE,
+			INTERFACE
+		};
+		Inheritance inheritanceVar;
 	public:
 		void InData(ifstream& ifst);
 		void Out(ofstream& ofst);
-
-		inheritance GetInheritance();
-		//void SetYear(short int yearVar);
+		Inheritance GetInheritance();
 		void SetInheritance(string inheritanceVarVar);
-		objectoriented() {}
+		Objectoriented() {}
 	};
 }
 #endif

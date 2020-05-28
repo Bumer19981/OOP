@@ -2,7 +2,7 @@
 #define __container_atd__
 #include "list_atd.h"
 namespace simple_langtypes {
-	class container
+	class Container
 	{
 
 	public:
@@ -12,8 +12,8 @@ namespace simple_langtypes {
 		void Clear(List& list);
 		void Sort();
 		void OutProcedure(ofstream& ofst);
-		container();
-		~container() { Clear(list); }
+		Container();
+		~Container() { Clear(list); }
 	};
 }
 #endif

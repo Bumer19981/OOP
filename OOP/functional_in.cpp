@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 namespace simple_langtypes {
-    void functional::InData(ifstream& ifst) {
+    void Functional::InData(ifstream& ifst) {
         string line;
         getline(ifst, line);
         int words = 0;
@@ -49,15 +49,15 @@ namespace simple_langtypes {
         string typification = array[0];
         isLazyCalculations = 1 ? array[1] == "1" : 0;
         year = stoi(array[2]);
-        typification == "dinamic" ? this->typificationVar = dynamic : this->typificationVar = strict;
-        langtype::InData(ifst);
+        typification == "dinamic" ? this->typificationVar = DYNAMIC : this->typificationVar = STRICT;
+        Langtype::InData(ifst);
     }
-    bool functional::GetIsLazyCalculations()
+    bool Functional::GetIsLazyCalculations()
 
     {
         return isLazyCalculations;
     }
-    functional::typification functional::GetTypification()
+    Functional::Typification Functional::GetTypification()
     {
         return typificationVar;
     }

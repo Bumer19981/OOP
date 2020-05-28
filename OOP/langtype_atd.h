@@ -4,16 +4,16 @@
 #include <fstream>
 using namespace std;
 namespace simple_langtypes {
-	class langtype {
+	class Langtype {
 		int mentions;
 	protected:
 		short int year;
 	public:
-		static langtype* In(ifstream& ifst);
+		static Langtype* In(ifstream& ifst);
 		virtual void InData(ifstream& ifst);
 		virtual void Out(ofstream& ofst);
 		virtual int AmountOfYears();
-		bool Compare(langtype& other);
+		bool Compare(Langtype& other);
 		virtual void OutProcedure(ofstream& ofst);
 
 
@@ -21,9 +21,6 @@ namespace simple_langtypes {
 		virtual int GetMentions();
 		virtual void SetMentions(int mentionsVar);
 		virtual void SetYear(int yyearVarear);
-	//protected:
-	//	langtype() {};
-
 	};
 }
 #endif

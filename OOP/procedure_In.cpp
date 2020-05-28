@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 namespace simple_langtypes {
-    void procedure::InData(ifstream& ifst) {
+    void Procedure::InData(ifstream& ifst) {
         string line;
         getline(ifst, line);
         int words = 0;
@@ -43,9 +43,9 @@ namespace simple_langtypes {
         }
         isAbstract = 1 ? array[0] == "1" : 0;
         year = stoi(array[1]);
-        langtype::InData(ifst);
+        Langtype::InData(ifst);
     }
-    bool procedure::GetIsAbstract()
+    bool Procedure::GetIsAbstract()
     {
         return isAbstract;
     }
