@@ -22,6 +22,7 @@ int main(int argc, char* argv[])
 		outfile << "Filled container. " << endl;
 		c.Out(outfile);
 		c.OutProcedure(outfile);
+		c.MultiMethod(outfile);
 		outfile << "Sorted container. " << endl;
 		c.Sort();
 		c.Out(outfile);

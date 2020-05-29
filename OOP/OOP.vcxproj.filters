@@ -20,27 +20,19 @@
     <ClCompile Include="procedure_Outprocedure.cpp" />
     <ClCompile Include="container_Outprocedure.cpp" />
     <ClCompile Include="langtype_Amount_Of_Years.cpp" />
-    <ClCompile Include="procedure_Mm.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="objectoriented_Mm.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="procedure_Procedure_Mm.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="procedure_Objectoriented_Mm.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="objectoriented_Procedure_Mm.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="objectoriented_ObjectorientedMm.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="container_Mm.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
+    <ClCompile Include="container_Mm.cpp" />
+    <ClCompile Include="objectoriented_Mm.cpp" />
+    <ClCompile Include="objectoriented_ObjectorientedMm.cpp" />
+    <ClCompile Include="objectoriented_Procedure_Mm.cpp" />
+    <ClCompile Include="procedure_Mm.cpp" />
+    <ClCompile Include="procedure_Objectoriented_Mm.cpp" />
+    <ClCompile Include="procedure_Procedure_Mm.cpp" />
+    <ClCompile Include="procedure_Functional_Mm.cpp" />
+    <ClCompile Include="objectoriented_Functional_Mm.cpp" />
+    <ClCompile Include="functional_Mm.cpp" />
+    <ClCompile Include="functional_Procedure_Mm.cpp" />
+    <ClCompile Include="functional_Objectoriented_Mm.cpp" />
+    <ClCompile Include="functional_Functional_Mm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="container_atd.h" />

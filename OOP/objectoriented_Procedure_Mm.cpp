@@ -2,6 +2,6 @@
 using namespace std;
 namespace simple_langtypes {
     void Objectoriented::MMProcedure(ofstream& ofst) {
-        ofst << "Objectoriented and Procedure" << endl;
+        ofst << "Procedure and Objectoriented" << endl;
     }
 }

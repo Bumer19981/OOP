@@ -152,9 +152,13 @@
     <ClCompile Include="container_In.cpp" />
     <ClCompile Include="container_Mm.cpp" />
     <ClCompile Include="container_Out.cpp" />
+    <ClCompile Include="functional_Functional_Mm.cpp" />
     <ClCompile Include="functional_in.cpp" />
+    <ClCompile Include="functional_Mm.cpp" />
+    <ClCompile Include="functional_Objectoriented_Mm.cpp" />
     <ClCompile Include="functional_out.cpp" />
     <ClCompile Include="container_Sort.cpp" />
+    <ClCompile Include="functional_Procedure_Mm.cpp" />
     <ClCompile Include="langtype_Amount_Of_Years.cpp" />
     <ClCompile Include="langtype_In.cpp" />
     <ClCompile Include="langtype_InData.cpp" />
@@ -162,11 +166,13 @@
     <ClCompile Include="langtype_Outprocedure.cpp" />
     <ClCompile Include="container_Outprocedure.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="objectoriented_Functional_Mm.cpp" />
     <ClCompile Include="objectoriented_In.cpp" />
     <ClCompile Include="objectoriented_Mm.cpp" />
     <ClCompile Include="objectoriented_ObjectorientedMm.cpp" />
     <ClCompile Include="objectoriented_Out.cpp" />
     <ClCompile Include="objectoriented_Procedure_Mm.cpp" />
+    <ClCompile Include="procedure_Functional_Mm.cpp" />
     <ClCompile Include="procedure_In.cpp" />
     <ClCompile Include="procedure_Mm.cpp" />
     <ClCompile Include="procedure_Objectoriented_Mm.cpp" />
