@@ -1,7 +1,7 @@
 #include "objectoriented_atd.h"
 using namespace std;
 namespace simple_langtypes {
-    void objectoriented::MultiMethod(langtype* other,
+    void Objectoriented::MultiMethod(Langtype* other,
         ofstream& ofst) {
         other->MMObject(ofst);
     }}

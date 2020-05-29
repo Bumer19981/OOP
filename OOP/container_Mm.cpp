@@ -1,17 +1,17 @@
 #include "container_atd.h"
 using namespace std;
 namespace simple_langtypes {
-    void container::MultiMethod(ofstream& ofst) {
+    void Container::MultiMethod(ofstream& ofst) {
         ofst << "Multimethod." << endl;
-        Node* tempHead = list.Head;
+        Node* tempHead = list.head;
 
         int temp = list.size;
         while (temp != 1) {
-            langtype* l = tempHead->l;
-            l->MultiMethod(tempHead->Next->l, ofst);
+            Langtype* l = tempHead->l;
+            l->MultiMethod(tempHead->next->l, ofst);
             l->Out(ofst);
-            tempHead->Next->l->Out(ofst);
-            tempHead = tempHead->Next;
+            tempHead->next->l->Out(ofst);
+            tempHead = tempHead->next;
             temp--;
         }
     }
