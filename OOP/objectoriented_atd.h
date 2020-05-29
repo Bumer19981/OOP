@@ -12,6 +12,12 @@ namespace simple_langtypes {
 	public:
 		void InData(ifstream& ifst);
 		void Out(ofstream& ofst);
+
+		void MultiMethod(Langtype* other, ofstream& ofst);
+		void MMProcedure(ofstream& ofst);
+		void MMObject(ofstream& ofst);
+		void MMFunctional(ofstream& ofst);
+
 		Inheritance GetInheritance();
 		void SetInheritance(string inheritanceVarVar);
 		Objectoriented() {}
