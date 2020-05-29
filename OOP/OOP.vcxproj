@@ -160,11 +160,15 @@
     <ClCompile Include="container_Sort.cpp" />
     <ClCompile Include="functional_Procedure_Mm.cpp" />
     <ClCompile Include="langtype_Amount_Of_Years.cpp" />
+    <ClCompile Include="langtype_Functional_Mm.cpp" />
     <ClCompile Include="langtype_In.cpp" />
     <ClCompile Include="langtype_InData.cpp" />
+    <ClCompile Include="langtype_Mm.cpp" />
+    <ClCompile Include="langtype_Objectoriented_Mm.cpp" />
     <ClCompile Include="langtype_Out.cpp" />
     <ClCompile Include="langtype_Outprocedure.cpp" />
     <ClCompile Include="container_Outprocedure.cpp" />
+    <ClCompile Include="langtype_Procedure_Mm.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="objectoriented_Functional_Mm.cpp" />
     <ClCompile Include="objectoriented_In.cpp" />

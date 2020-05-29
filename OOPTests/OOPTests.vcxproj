@@ -100,7 +100,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalLibraryDirectories>..\OOP\x64\Debug;$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>langtype_Amount_Of_Years.obj;compare.obj;container_Constr.obj;container_In.obj;container_Out.obj;container_Outprocedure.obj;container_Sort.obj;functional_in.obj;functional_out.obj;langtype_In.obj;langtype_InData.obj;langtype_Out.obj;langtype_Outprocedure.obj;objectoriented_In.obj;objectoriented_Out.obj;procedure_In.obj;procedure_Out.obj;procedure_Outprocedure.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>langtype_Amount_Of_Years.obj;compare.obj;container_Constr.obj;container_In.obj;container_Out.obj;container_Outprocedure.obj;container_Sort.obj;functional_in.obj;functional_out.obj;langtype_In.obj;langtype_InData.obj;langtype_Out.obj;langtype_Outprocedure.obj;objectoriented_In.obj;objectoriented_Out.obj;procedure_In.obj;procedure_Out.obj;procedure_Outprocedure.obj;procedure_Procedure_Mm.obj;procedure_Objectoriented_Mm.obj;procedure_Mm.obj;procedure_Functional_Mm.obj;objectoriented_Procedure_Mm.obj;objectoriented_ObjectorientedMm.obj;objectoriented_Mm.obj;objectoriented_Functional_Mm.obj;langtype_Procedure_Mm.obj;langtype_Objectoriented_Mm.obj;langtype_Mm.obj;langtype_Functional_Mm.obj;functional_Procedure_Mm.obj;functional_Objectoriented_Mm.obj;functional_Mm.obj;functional_Functional_Mm.obj;container_Mm.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

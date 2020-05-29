@@ -16,10 +16,10 @@ namespace simple_langtypes {
 		bool Compare(Langtype& other);
 		virtual void OutProcedure(ofstream& ofst);
 
-		virtual void MultiMethod(Langtype* other, ofstream& ofst) = 0;
-		virtual void MMProcedure(ofstream& ofst) = 0;
-		virtual void MMObject(ofstream& ofst) = 0;
-		virtual void MMFunctional(ofstream& ofst) = 0;
+		virtual void MultiMethod(Langtype* other, ofstream& ofst);
+		virtual void MMProcedure(ofstream& ofst);
+		virtual void MMObject(ofstream& ofst);
+		virtual void MMFunctional(ofstream& ofst);
 
 
 		virtual int GetYear();
