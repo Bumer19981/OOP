@@ -14,6 +14,7 @@ namespace simple_langtypes {
 		void OutProcedure(ofstream& ofst);
 		Container();
 		~Container() { Clear(list); }
+		void MultiMethod(ofstream& ofst);
 	};
 }
 #endif

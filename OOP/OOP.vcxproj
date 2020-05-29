@@ -150,6 +150,7 @@
     <ClCompile Include="compare.cpp" />
     <ClCompile Include="container_Constr.cpp" />
     <ClCompile Include="container_In.cpp" />
+    <ClCompile Include="container_Mm.cpp" />
     <ClCompile Include="container_Out.cpp" />
     <ClCompile Include="functional_in.cpp" />
     <ClCompile Include="functional_out.cpp" />
@@ -162,10 +163,16 @@
     <ClCompile Include="container_Outprocedure.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="objectoriented_In.cpp" />
+    <ClCompile Include="objectoriented_Mm.cpp" />
+    <ClCompile Include="objectoriented_ObjectorientedMm.cpp" />
     <ClCompile Include="objectoriented_Out.cpp" />
+    <ClCompile Include="objectoriented_Procedure_Mm.cpp" />
     <ClCompile Include="procedure_In.cpp" />
+    <ClCompile Include="procedure_Mm.cpp" />
+    <ClCompile Include="procedure_Objectoriented_Mm.cpp" />
     <ClCompile Include="procedure_Out.cpp" />
     <ClCompile Include="procedure_Outprocedure.cpp" />
+    <ClCompile Include="procedure_Procedure_Mm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="container_atd.h" />
