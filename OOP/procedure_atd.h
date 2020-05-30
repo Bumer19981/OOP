@@ -8,12 +8,10 @@ namespace simple_langtypes {
 		void InData(ifstream& ifst);
 		void Out(ofstream& ofst);
 		void OutProcedure(ofstream& ofst);
-
 		void MultiMethod(Langtype* other, ofstream& ofst);
 		void MMProcedure(ofstream& ofst);
 		void MMObject(ofstream& ofst);
 		void MMFunctional(ofstream& ofst);
-
 		bool GetIsAbstract();
 		void SetIsAbstract(bool isAbstractVar);
 		Procedure() {}

@@ -4,7 +4,6 @@
 namespace simple_langtypes {
 	class Container
 	{
-
 	public:
 		List list;
 		void In(ifstream& ifst);
