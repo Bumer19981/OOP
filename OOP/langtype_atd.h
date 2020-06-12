@@ -3,8 +3,10 @@
 #define __langtype_atd__
 #include <fstream>
 using namespace std;
-namespace simple_langtypes {
-	class Langtype {
+namespace simple_langtypes 
+{
+	class Langtype 
+	{
 		int mentions;
 	protected:
 		short int year;

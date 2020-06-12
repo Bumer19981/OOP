@@ -3,57 +3,71 @@
 #include "langtype_atd.h"
 
 using namespace std;
-namespace simple_langtypes {
-	void Container::Sort() {
+namespace simple_langtypes 
+{
+	void Container::Sort() 
+	{
 		if (list.head == NULL)
 		{
 			throw std::invalid_argument("Error: list is empty!");
 		}
-		for (int i = 0; i < list.size - 1; i++) {
-			for (int j = i + 1; j < list.size; j++) {
-				Node* ComparableItem1 = new Node;
-				Node* ComparableItem2 = new Node;
-				for (int k = 0; k <= i; ++k) {
-					if (k == 0) {
-						ComparableItem1 = list.head;
+		for (int i = 0; i < list.size - 1; i++) 
+		{
+			for (int j = i + 1; j < list.size; j++) 
+			{
+				Node* comparableItem1 = new Node;
+				Node* comparableItem2 = new Node;
+				for (int k = 0; k <= i; ++k) 
+				{
+					if (k == 0) 
+					{
+						comparableItem1 = list.head;
 					}
-					else {
-						ComparableItem1 = ComparableItem1->next;
-					}
-				}
-				for (int k = 0; k <= j; ++k) {
-					if (k == 0) {
-						ComparableItem2 = list.head;
-					}
-					else {
-						ComparableItem2 = ComparableItem2->next;
+					else 
+					{
+						comparableItem1 = comparableItem1->next;
 					}
 				}
-				if (ComparableItem1->l->Compare(*ComparableItem2->l)) {
+				for (int k = 0; k <= j; ++k) 
+				{
+					if (k == 0) 
+					{
+						comparableItem2 = list.head;
+					}
+					else 
+					{
+						comparableItem2 = comparableItem2->next;
+					}
+				}
+				if (comparableItem1->l->Compare(*comparableItem2->l)) 
+				{
 					Node* tmp;
-					tmp = ComparableItem2->next;
-					ComparableItem2->next = ComparableItem1->next;
-					ComparableItem2->next->prev = ComparableItem2;
+					tmp = comparableItem2->next;
+					comparableItem2->next = comparableItem1->next;
+					comparableItem2->next->prev = comparableItem2;
 
-					ComparableItem1->next = tmp;
-					ComparableItem1->next->prev = ComparableItem1;
+					comparableItem1->next = tmp;
+					comparableItem1->next->prev = comparableItem1;
 
-					tmp = ComparableItem1->prev;
-					ComparableItem1->prev = ComparableItem2->prev;
-					ComparableItem1->prev->next = ComparableItem1;
+					tmp = comparableItem1->prev;
+					comparableItem1->prev = comparableItem2->prev;
+					comparableItem1->prev->next = comparableItem1;
 
-					ComparableItem2->prev = tmp;
-					ComparableItem2->prev->next = ComparableItem2;
-					if (list.head->l->Compare(*ComparableItem2->l))
-						list.head = ComparableItem2;
+					comparableItem2->prev = tmp;
+					comparableItem2->prev->next = comparableItem2;
+					if (list.head->l->Compare(*comparableItem2->l))
+						list.head = comparableItem2;
 				}
 			}
 		}
-		for (int i = 0; i < list.size; ++i) {
-			if (i == 0) {
+		for (int i = 0; i < list.size; ++i) 
+		{
+			if (i == 0) 
+			{
 				list.tail = list.head;
 			}
-			else {
+			else 
+			{
 				list.tail = list.tail->next;
 			}
 		}

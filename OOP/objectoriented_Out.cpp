@@ -1,15 +1,20 @@
 #include "objectoriented_atd.h"
 using namespace std;
-namespace simple_langtypes {
-    void Objectoriented::Out(ofstream& ofst) {
+namespace simple_langtypes 
+{
+    void Objectoriented::Out(ofstream& ofst) 
+    {
         string inheritance;
-        if (this->inheritanceVar == ONCE) {
+        if (this->inheritanceVar == ONCE) 
+        {
             inheritance = "once";
         }
-        else if (this->inheritanceVar == MULTIPLE) {
+        else if (this->inheritanceVar == MULTIPLE) 
+        {
             inheritance = "multiple";
         }
-        else {
+        else 
+        {
             inheritance = "interface";
         }
         ofst << "It is an object-oriented language: inheritance = " << inheritance << ", year = " << year << endl;
@@ -18,7 +23,8 @@ namespace simple_langtypes {
     }
     void Objectoriented::SetInheritance(string inheritanceVarVar)
     {
-        if (inheritanceVarVar == "once") {
+        if (inheritanceVarVar == "once") 
+        {
             inheritanceVar = ONCE;
         }
         else if (inheritanceVarVar == "multiple")

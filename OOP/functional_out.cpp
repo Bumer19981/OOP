@@ -1,7 +1,9 @@
 #include "functional_atd.h"
 using namespace std;
-namespace simple_langtypes {
-	void Functional::Out(ofstream& ofst) {
+namespace simple_langtypes 
+{
+	void Functional::Out(ofstream& ofst) 
+	{
 		string typification = this->typificationVar == STRICT ? "strict" : "dinamic";
 		ofst << "It is a functional language: typification = " << typification
 			<< ", lazy calculations = " << isLazyCalculations << ", year = " << year << endl;

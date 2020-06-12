@@ -1,9 +1,12 @@
 #ifndef __functional_atd__
 #define __functional_atd__
 #include "langtype_atd.h"
-namespace simple_langtypes {
-	class Functional : public Langtype {
-		enum Typification {
+namespace simple_langtypes 
+{
+	class Functional : public Langtype 
+	{
+		enum Typification 
+		{
 			STRICT,
 			DYNAMIC
 		};

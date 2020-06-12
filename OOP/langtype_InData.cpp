@@ -2,15 +2,19 @@
 #include "langtype_atd.h"
 #include <string>
 using namespace std;
-namespace simple_langtypes {
-    void Langtype::InData(ifstream& ifst) {
+namespace simple_langtypes 
+{
+    void Langtype::InData(ifstream& ifst) 
+    {
         string line;
         getline(ifst, line);
         int words = 0;
         string array1[1];
-        for (int i = 0; i < line.length(); ++i) {
+        for (int i = 0; i < line.length(); ++i) 
+        {
 
-            if (line[i] == ' ' && line[i + 1] != '\0') {
+            if (line[i] == ' ' && line[i + 1] != '\0') 
+            {
                 words += 1;
             }
         }
@@ -19,24 +23,30 @@ namespace simple_langtypes {
             throw std::invalid_argument("Error: wrong amount of params in langtype mentions!");
         }
         words = 0;
-        for (int i = 0; i < line.length(); ++i) {
+        for (int i = 0; i < line.length(); ++i) 
+        {
 
-            if (line[i] == ' ' && line[i + 1] != '\0') {
+            if (line[i] == ' ' && line[i + 1] != '\0') 
+            {
                 words += 1;
                 i += 1;
             }
             array1[words] += line[i];
-            if (line[i] == ' ') {
+            if (line[i] == ' ') 
+            {
                 throw std::invalid_argument("Error: additional space char in langtype mentions!");
             }
         }
-        try {
+        try 
+        {
             mentions = stoi(array1[0]);
-            if (stoi(array1[0]) < 0) {
+            if (stoi(array1[0]) < 0) 
+            {
                 throw std::invalid_argument("!");
             }
         }
-        catch (exception & e) {
+        catch (exception & e) 
+        {
             throw std::invalid_argument("Error: langtype mentions should be a positive number!");
         }
     }}

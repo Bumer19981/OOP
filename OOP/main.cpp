@@ -3,7 +3,7 @@
 using namespace std;
 int main(int argc, char* argv[])
 {
-	if (argc != 3)
+	if (argc != 3) 
 	{
 		cout << "incorrect command line! "
 			"Waited: command in_file out_file"
@@ -31,11 +31,11 @@ int main(int argc, char* argv[])
 		c.Out(outfile);
 		cout << "Stop" << endl;
 	}
-	catch (std::invalid_argument & ia)
+	catch (std::invalid_argument & ia) 
 	{
 		std::cerr << ia.what();
 	}
-	catch (std::ifstream::failure f)
+	catch (std::ifstream::failure f) 
 	{
 		std::cerr << "Error reading input file";
 	}
