@@ -1,14 +1,18 @@
 #include "container_atd.h"
 using namespace std;
-namespace simple_langtypes {
-    void Container::In(ifstream& ifst) {
+namespace simple_langtypes 
+{
+    void Container::In(ifstream& ifst)
+    {
         if (!ifst.is_open())
         {
             throw std::invalid_argument("Error reading file!");
         }
-        while (!ifst.eof()) {
+        while (!ifst.eof()) 
+        {
             Langtype* l;
-            if ((l = Langtype::In(ifst)) != 0) {
+            if ((l = Langtype::In(ifst)) != 0) 
+            {
                 list.size++;
                 Node* temp = new Node;
                 temp->next = list.head;

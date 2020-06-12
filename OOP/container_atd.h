@@ -1,7 +1,8 @@
 #ifndef __container_atd__
 #define __container_atd__
 #include "list_atd.h"
-namespace simple_langtypes {
+namespace simple_langtypes
+{
 	class Container
 	{
 	public:

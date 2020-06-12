@@ -1,8 +1,10 @@
 #include "container_atd.h"
-namespace simple_langtypes {
+namespace simple_langtypes 
+{
     Container::Container() { }
     List::List() : head(NULL), tail(NULL), size(0) {}
-    List::~List() {
+    List::~List() 
+    {
         while (size != 0)
         {
             Node* temp = head->next;
@@ -11,7 +13,8 @@ namespace simple_langtypes {
             size--;
         }
     }
-    void Container::Clear(List& list) {
+    void Container::Clear(List& list)
+    {
         list.~List();
     }
 }

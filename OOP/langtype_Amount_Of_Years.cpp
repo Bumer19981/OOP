@@ -3,7 +3,8 @@
 #include <string.h>
 #include <ctime>
 using namespace std;
-namespace simple_langtypes {
+namespace simple_langtypes 
+{
 	int Langtype::AmountOfYears()
 	{
 		time_t now = time(0);

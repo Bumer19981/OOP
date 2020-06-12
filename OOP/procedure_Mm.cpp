@@ -1,8 +1,10 @@
 #include "procedure_atd.h"
 using namespace std;
-namespace simple_langtypes {
+namespace simple_langtypes 
+{
     void Procedure::MultiMethod(Langtype* other,
-        ofstream& ofst) {
+        ofstream& ofst) 
+    {
         other->MMProcedure(ofst);
     }
 }

@@ -1,15 +1,19 @@
 #include "functional_atd.h"
 #include <string>
 using namespace std;
-namespace simple_langtypes {
-    void Functional::InData(ifstream& ifst) {
+namespace simple_langtypes 
+{
+    void Functional::InData(ifstream& ifst) 
+    {
         string line;
         getline(ifst, line);
         int words = 0;
         string array[3];
-        for (int i = 0; i < line.length(); ++i) {
+        for (int i = 0; i < line.length(); ++i)
+        {
 
-            if (line[i] == ' ' && line[i + 1] != '\0') {
+            if (line[i] == ' ' && line[i + 1] != '\0') 
+            {
                 words += 1;
             }
         }
@@ -18,30 +22,38 @@ namespace simple_langtypes {
             throw std::invalid_argument("Error: wrong amount of params in functional language!");
         }
         words = 0;
-        for (int i = 0; i < line.length(); ++i) {
+        for (int i = 0; i < line.length(); ++i)
+        {
 
-            if (line[i] == ' ' && line[i + 1] != '\0') {
+            if (line[i] == ' ' && line[i + 1] != '\0') 
+            {
                 words += 1;
                 i += 1;
             }
             array[words] += line[i];
-            if (line[i] == ' ') {
+            if (line[i] == ' ')
+            {
                 throw std::invalid_argument("Error: additional space char in functional language!");
             }
         }
-        if (array[0] != "dinamic" && array[0] != "strict") {
+        if (array[0] != "dinamic" && array[0] != "strict")
+        {
             throw std::invalid_argument("Error: typification in functional language should be correct!");
         }
-        if (array[1] != "1" && array[1] != "0") {
+        if (array[1] != "1" && array[1] != "0") 
+        {
             throw std::invalid_argument("Error: isLazyCalculations in functional language should be a bool!");
         }
-        try {
+        try 
+        {
             year = stoi(array[2]);
-            if (year < 0) {
+            if (year < 0) 
+            {
                 throw std::invalid_argument("!");
             }
         }
-        catch (exception & e) {
+        catch (exception & e) 
+        {
             throw std::invalid_argument("Error: year in functional language should be a positive number!");
         }
 

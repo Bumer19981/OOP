@@ -1,15 +1,19 @@
 #include "objectoriented_atd.h"
 #include <string>
 using namespace std;
-namespace simple_langtypes {
-    void Objectoriented::InData(ifstream& ifst) {
+namespace simple_langtypes 
+{
+    void Objectoriented::InData(ifstream& ifst) 
+    {
         string line;
         getline(ifst, line);
         int words = 0;
         string array[2];
-        for (int i = 0; i < line.length(); ++i) {
+        for (int i = 0; i < line.length(); ++i) 
+        {
 
-            if (line[i] == ' ' && line[i + 1] != '\0') {
+            if (line[i] == ' ' && line[i + 1] != '\0') 
+            {
                 words += 1;
             }
         }
@@ -18,31 +22,39 @@ namespace simple_langtypes {
             throw std::invalid_argument("Error: wrong amount of params in objectoriented language!");
         }
         words = 0;
-        for (int i = 0; i < line.length(); ++i) {
+        for (int i = 0; i < line.length(); ++i) 
+        {
 
-            if (line[i] == ' ' && line[i + 1] != '\0') {
+            if (line[i] == ' ' && line[i + 1] != '\0') 
+            {
                 words += 1;
                 i += 1;
             }
             array[words] += line[i];
-            if (line[i] == ' ') {
+            if (line[i] == ' ') 
+            {
                 throw std::invalid_argument("Error: additional space char in objectoriented language!");
             }
         }
-        if (array[0] != "once" && array[0] != "multiple" && array[0] != "interface") {
+        if (array[0] != "once" && array[0] != "multiple" && array[0] != "interface") 
+        {
             throw std::invalid_argument("Error: inheritance in objectoriented language should be correct!");
         }
-        try {
+        try
+        {
             year = stoi(array[1]);
-            if (year < 0) {
+            if (year < 0) 
+            {
                 throw std::invalid_argument("!");
             }
         }
-        catch (exception & e) {
+        catch (exception & e)
+        {
             throw std::invalid_argument("Error: year in objectoriented language should be a positive number!");
         }
         string inheritance = array[0];
-        if (inheritance == "once") {
+        if (inheritance == "once") 
+        {
             this->inheritanceVar = ONCE;
         }
         else if (inheritance == "multiple")

@@ -1,15 +1,19 @@
 #include "procedure_atd.h"
 #include <string>
 using namespace std;
-namespace simple_langtypes {
-    void Procedure::InData(ifstream& ifst) {
+namespace simple_langtypes 
+{
+    void Procedure::InData(ifstream& ifst) 
+    {
         string line;
         getline(ifst, line);
         int words = 0;
         string array[2];
-        for (int i = 0; i < line.length(); ++i) {
+        for (int i = 0; i < line.length(); ++i) 
+        {
 
-            if (line[i] == ' ' && line[i + 1] != '\0') {
+            if (line[i] == ' ' && line[i + 1] != '\0') 
+            {
                 words += 1;
             }
         }
@@ -18,27 +22,34 @@ namespace simple_langtypes {
             throw std::invalid_argument("Error: wrong amount of params in procedure language!");
         }
         words = 0;
-        for (int i = 0; i < line.length(); ++i) {
+        for (int i = 0; i < line.length(); ++i) 
+        {
 
-            if (line[i] == ' ' && line[i + 1] != '\0') {
+            if (line[i] == ' ' && line[i + 1] != '\0') 
+            {
                 words += 1;
                 i += 1;
             }
             array[words] += line[i];
-            if (line[i] == ' ') {
+            if (line[i] == ' ') 
+            {
                 throw std::invalid_argument("Error: additional space char in procedure language!");
             }
         }
-        if (array[0] != "0" && array[0] != "1") {
+        if (array[0] != "0" && array[0] != "1") 
+        {
             throw std::invalid_argument("Error: isAbstract in procedure language should be correct!");
         }
-        try {
+        try 
+        {
             year = stoi(array[1]);
-            if (year < 0) {
+            if (year < 0) 
+            {
                 throw std::invalid_argument("!");
             }
         }
-        catch (exception & e) {
+        catch (exception & e) 
+        {
             throw std::invalid_argument("Error: year in procedure language should be a positive number!");
         }
         isAbstract = 1 ? array[0] == "1" : 0;
@@ -49,8 +60,4 @@ namespace simple_langtypes {
     {
         return isAbstract;
     }
-    //int procedure::GetYear()
-    //{
-    //    return year;
-    //}
 }

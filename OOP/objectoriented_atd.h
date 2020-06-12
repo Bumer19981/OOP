@@ -1,9 +1,12 @@
 #ifndef __objectoriented_atd__
 #define __objectoriented_atd__
 #include "langtype_atd.h"
-namespace simple_langtypes {
-	class Objectoriented : public Langtype {
-		enum Inheritance {
+namespace simple_langtypes 
+{
+	class Objectoriented : public Langtype 
+	{
+		enum Inheritance
+		{
 			ONCE,
 			MULTIPLE,
 			INTERFACE
